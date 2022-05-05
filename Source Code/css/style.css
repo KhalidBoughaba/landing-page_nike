@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+
+:root{
+  --primary-color:#b81733;
+  --secondary-color:#016bea;
+  /* background-image: linear-gradient(90deg, #f64325,#b81733,#5c0b1e) */
+}
+*{
+  
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+}
+body{
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.6;
+  color :#ffff;
+  font-size: 1.1rem;
+  background-color: #d01516;
+  background-image: radial-gradient(at 64% 69%, hsla(199, 91%, 54%, 1) 0, hsla(199, 91%, 54%, 0) 50%),
+  radial-gradient(at 13% 89%, hsla(328, 88%, 58%, 1) 0, hsla(328, 88%, 58%, 0) 50%),
+  radial-gradient(at 7% 66%, hsla(255, 93%, 55%, 1) 0, hsla(255, 93%, 55%, 0) 50%),
+  radial-gradient(at 4% 92%, hsla(276, 93%, 62%, 1) 0, hsla(276, 93%, 62%, 0) 50%),
+  radial-gradient(at 46% 51%, hsla(48, 87%, 68%, 1) 0, hsla(48, 87%, 68%, 0) 50%),
+  radial-gradient(at 82% 97%, hsla(159, 91%, 55%, 1) 0, hsla(159, 91%, 55%, 0) 50%),
+  radial-gradient(at 3% 54%, hsla(258, 89%, 63%, 1) 0, hsla(258, 89%, 63%, 0) 50%),
+  radial-gradient(at 80% 73%, hsla(83, 85%, 53%, 1) 0, hsla(83, 85%, 53%, 0) 50%),
+  radial-gradient(at 46% 31%, hsla(309, 88%, 51%, 1) 0, hsla(309, 88%, 51%, 0) 50%),
+  radial-gradient(at 88% 52%, hsla(346, 87%, 60%, 1) 0, hsla(346, 87%, 60%, 0) 50%),
+  radial-gradient(at 31% 84%, hsla(320, 95%, 62%, 1) 0, hsla(320, 95%, 62%, 0) 50%),
+  radial-gradient(at 46% 26%, hsla(277, 90%, 69%, 1) 0, hsla(277, 90%, 69%, 0) 50%),
+  radial-gradient(at 36% 56%, hsla(176, 90%, 57%, 1) 0, hsla(176, 90%, 57%, 0) 50%),
+  radial-gradient(at 59% 34%, hsla(256, 89%, 57%, 1) 0, hsla(256, 89%, 57%, 0) 50%);
+  
+}
+h1,h2,h3,h4{
+  line-height: 1.3;
+
+}
+a{
+  color: #ffff;
+  text-decoration: none;
+
+}
+ul{
+  list-style: none;
+}
+img{
+  width: 100%;
+
+}
+
+.logo{
+  padding-right: 25rem;
+  padding-top: 1rem;
+  height: 100px;
+}
+.container{
+  max-width: 1200px;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 2rem;
+
+}
+
+.navbar{
+  font-size: 1.2rem;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+  
+  
+}
+.navbar .container{
+  display: grid;
+  grid-template-columns:repeat(2, 1fr);
+}
+
+
+.navbar .nav{
+  margin-top: 40px;
+  justify-self: flex-end;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.navbar .nav a{
+  padding: 2rem;
+  letter-spacing: 0.3rem;
+  font-weight: 400;
+}
+
+.navbar .nav a:hover{
+  
+  background: #d01516;
+  padding: 2rem;
+  padding-top: 1rem;
+  
+  
+}
+
+.section-a{
+  margin: 2rem 0;
+}
+.section-a .container{
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-gap:3rem;
+align-items: top;
+justify-content: center;
+}
+.section-a h1{
+  color: #ffff;
+  font-size: 4rem;
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  margin-top: 2rem;
+}
+
+.section-a p{
+  margin: 1rem 0 2rem 0;
+  font-size: 2rem;
+}
+
+.btn{
+  text-decoration: none;
+  position: absolute;
+  border: none;
+  font-size: 14px;
+  font-family: inherit;
+  color: #fff;
+  width: 16em;
+  padding: 7px;
+  font-weight: bold;
+  line-height: 2em;
+  text-align: center;
+  background: linear-gradient(
+90deg
+,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
+  background-size: 300%;
+  border-radius: 30px;
+  z-index: 1;
+  margin-top: 1em;
+  box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
+  
+}
+.btn:hover{
+  animation: ani 8s linear infinite;
+  border: none;
+}
+
+@keyframes ani {
+  0% {
+   background-position: 0%;
+  }
+ 
+  100% {
+   background-position: 400%;
+  }
+ }
+ 
+ .btn:before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  z-index: -1;
+  background: linear-gradient(90deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
+  background-size: 400%;
+  border-radius: 35px;
+  transition: 1s;
+ }
+ 
+ .btn:hover::before {
+  filter: blur(20px);
+ }
+ 
+ .btn:active {
+  background: linear-gradient(32deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
+ }
